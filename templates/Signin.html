@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ForgetPassword</title>
+    <title>Signin</title>
     <link rel="stylesheet" href="../static/auth.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"">
 </head>
@@ -16,7 +16,7 @@
             <div class="form">
                 <header class="form-header">
                     <div class="title">
-                        <h1>Forget Password?</h1>
+                        <h1>Sign In</h1>
                     </div>
                 </header>
                 <form>
@@ -25,14 +25,23 @@
                             <label for="email">Email</label>
                             <div class="input-wrapper">
                                 <i class="fa-regular fa-envelope"></i>
-                                <input id="email" type="text" name="email" placeholder="Enter your e-mail! A password reset code will be sent.
-                                " required>
+                                <input id="email" type="text" name="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <label for="password1">Password</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-lock"></i>
+                                <input id="password1" type="password" name="password1" placeholder="Enter your password" required>
                             </div>
                         </div>
                         <div class="link-area">
                             <a href="../templates/Signup.html">Don't have a account? Sign Up</a>
                         </div>
-                        <button>To Send</button>
+                        <button>Sign In</button>
+                        <div class="link-area">
+                            <a href="../templates/ForgetPassword.html">Forget password?</a>
+                        </div>
                         <div class="sign-up-in-area">
                             <p>Sign In with </p>
                             <a href="#"><i class="fa-solid fa-g"></i></a>
